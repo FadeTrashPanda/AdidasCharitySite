@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags for character set and viewport -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Title of the page -->
+  <title>Adidas Charity Site</title>
+  
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="Css/Style.css" />
+  
+  <!-- Preconnect to Google Fonts API -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+  <!-- Link to Google Fonts for Inter and Jost font families -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Jost&display=swap" rel="stylesheet" />
+  
+  <!-- External scripts for Scroll.js and Hamburger.js -->
+  <script src="Scroll.js"></script>
+  <script src="Hamburger.js"></script>
+</head>
+
+<body>
+  <!-- Main content of the webpage -->
+  <main>
+    <!-- Header section with logo, navigation, and hamburger menu -->
+    <header id="scroll">
+      <div class="logo">
+        <!-- Adidas logo link -->
+        <a href="https://www.adidas.co.uk/?cm_mmc=AdieSEM_Google-_-adidas-Brand-B-Exact-ROI-_-Adidas-X-X-Brand-_-adidas&cm_mmca1=UK&cm_mmca2=e&ds_kid=43700007277000591&http://www.adidas.co.uk/?cm_mmc=AdieSEM_Google-_-Footwear-General-B-Exact-_-Shoes-Sandals-X-General-_-&cm_mmca1=UK&cm_mmca2=&ds_kid=&af_reengagement_window=30d&is_retargeting=true&pid=googleadwords_temp&c=adidas-Brand-B-Exact-ROI&af_channel=Search&gad_source=1&gclid=EAIaIQobChMI7qGS_ID9ggMVQpBQBh1rtAo6EAAYASAAEgIdzfD_BwE&gclsrc=aw.ds">
+          <!-- Adidas logo image -->
+          <img src="Img/AdidasLogo.png" alt="logo" width="70" />
+        </a>
+        <!-- Lives Not Knives logo link -->
+        <a href="https://www.livesnotknives.org/">
+          <!-- Lives Not Knives logo image -->
+          <img src="/Img/LivesLogo.jpg" alt="Lives-Not-Knives-Logo"/>
+        </a>
+      </div>
+
+      <!-- Navigation links -->
+      <div class="navWrapper">
+        <nav>
+          <a href="#home" class="active">Home</a>
+          <a href="#AboutUs">About us</a>
+          <a href="#Influencers">Influencers</a>
+          <a href="#Events">Charity Game</a>
+        </nav>
+      </div>
+
+      <!-- Curtain menu for small screens -->
+      <div id="curtain-menu">
+        <div id="curtain-menu-content">   
+          <!-- Accordion buttons for Home,about us, Influencers, and Chairty Game -->
+          <a href="#home" class="curtain-button" onclick="changeMenu(), toggleMenu()">Home</a>
+       
+          <a href="#AboutUs" class="accordion" onclick="changeMenu(), toggleMenu()">About Us</a>
+
+          <a href="#Influencers" class="accordion" onclick="changeMenu(), toggleMenu()">Influencers</a>
+         
+          <a href="#Events" class="accordion" onclick="changeMenu(), toggleMenu()">Chairty Game</a>
+        </div>
+      </div>
+
+      <!-- Hamburger menu button -->
+      <div id="hamburgerButton" onclick="changeMenu(this), toggleMenu()">
+        <div></div>
+        <div></div>
+      </div>
+    </header>
+
+    <!-- Home section with banner button and hero image -->
+    <section id="home">
+      <a class="banner-button" role="button"><h3>Learn More</h3></a>
+      <div id="heroImage" title="Adidas-X-London-Shirts"></div>
+    </section>
+
+    <!-- About Us section with text and image -->
+    <section id="AboutUs">
+      <div class="Backdrop">
+        <h1>About Us</h1>
+        <p>
+          Welcome to <span>Lives Not Knives</span>, where we champion a future free from the grip of violence. 
+          We're not just an organization; we're a movement committed to breaking the cycle of knife crime. 
+        </p>
+
+        <p>
+          At <span>Lives Not Knives</span>, we believe in the power of every individual to choose a positive path. 
+          Through <span>community engagement</span>, <span>education</span>, and <span>empowerment</span>, 
+          we provide the tools and support needed to forge a life without knives.
+        </p>
+      </div>
+      <!-- Image for the About Us section -->
+      <img src="https://i0.wp.com/www.eastlondonlines.co.uk/ell_wp/wp-content/uploads/2017/11/livesnotknives2.jpg?resize=750%2C422" alt="Oranges" />
+    </section>
+
+    <!-- Influencers section with circles and text -->
+    <section id="Influencers">
+
+      <section class="circleContainer">
+        <div class="circleContainer2">
+          <div class="circle" id="JG"></div>
+          <div class="circle" id="GW"></div>
+        </div>
+        <div class="circleContainer2">
+          <div class="circle" id="TN"></div>
+        </div>
+
+      </section>
+
+      <div class="Backdrop">
+        <h1>Influencers</h1>
+        <p>
+          Influential voices have united with <span>Lives Not Knives X Adidas Chairty</span>, amplifying our message against knife crime. 
+        </p>
+
+        <p>
+          These advocates leverage their platforms to raise awareness and inspire change.
+          Together, we're <span>building a safer future</span>, free from the threat of knives. 
+          Their involvement is a testament to our shared belief in positive, collective action.
+        </p>
+      </div>
+    </section>
+
+    <!-- Events section with text and video -->
+    <section id="Events">
+      <h1>Events</h1>
+      <p class="Backdrop">
+        Step into the ring at <span>Copper-Stadium London</span> with <span>Lives Not Knives</span> at our charity <span>boxing event</span>—an electrifying night where fists fly for a cause. 
+        Join fighters from all walks of life as we <span>raise awareness and funds to combat knife crime</span>. It's more than a match; it's a <span>powerful statement</span> for a safer, brighter future. 
+        Save the date for an unforgettable evening of action and impact!"
+      </p>
+  
+      <!-- Video for the Events section -->
+      <video height="400" id="copperStadium" autoplay muted loop>
+        <source src="/Img/WelcomeToTheCopperBoxArena.mp4"  type="video/mp4" >
+      </video>
+    </section>
+
+    <section id="Social">
+      <img src="https://clipartcraft.com/images/instagram-clipart-logo-black-4.png" width="80" alt="Instagram">
+      <img src="https://findicons.com/files/icons/2779/simple_icons/4096/twitter_4096_black.png" width="80"  alt="Twitter">
+      <img src="https://www.pngkey.com/png/full/90-902640_facebook-logo-circle-black-transparent-logo-fb-vector.png" width="80"  alt="Facebook">
+    </section>
+    <!-- Footer section with navigation links and newsletter form -->
+    <footer>
+      <div>
+        <ol>
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="#AboutUs">About Us</a></li>
+          <li><a href="#Influencers">Influencers</a></li>
+          <li><a href="#Events">Charity Game</a></li>
+        </ol>
+      </div>
+
+      <!-- Newsletter form -->
+      <form>
+        <h2>Newsletter</h2>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="submit"><!--Button For Form-->
+      </form>
+    </footer>
+  </main>
+</body>
+</html>
